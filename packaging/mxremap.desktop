@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=MX Remap
+Name[pl]=MX Remap
+Comment=Remap buttons and settings of Logitech mice
+Comment[pl]=Konfigurator przycisków i ustawień myszy Logitech
+Exec=mxremap
+Icon=input-mouse
+Categories=Settings;HardwareSettings;
+StartupNotify=true

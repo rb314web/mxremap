@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.rpm
+rpmbuild/
+.venv/
+*.png
+!docs/*.png

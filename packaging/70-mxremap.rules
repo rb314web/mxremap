@@ -1,0 +1,5 @@
+# MX Remap: dostep dla zalogowanego uzytkownika do myszy Logitecha (zdarzenia i HID++) oraz do /dev/uinput.
+# Regula jest szersza niz ta generowana przez install.sh (nie zna Twojej myszy w momencie budowania pakietu).
+KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"
+SUBSYSTEM=="input", KERNEL=="event*", ATTRS{id/vendor}=="046d", ENV{ID_INPUT_MOUSE}=="1", TAG+="uaccess"
+SUBSYSTEM=="hidraw", KERNELS=="0003:046D:*|0005:046D:*", TAG+="uaccess"
